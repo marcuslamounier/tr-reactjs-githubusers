@@ -1,12 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+import GithubUsers from './githubUsers';
+import GithubUser from './users/[user]';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import PageTemplate from './components/templates/pageTemplate';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <GithubUsers />
+        </Route>
+        <Route path="/users/:username">
+          <GithubUser />
+        </Route>
+        <Route path="*">
+          <PageTemplate><h1>Error</h1></PageTemplate>
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

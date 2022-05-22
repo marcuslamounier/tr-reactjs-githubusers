@@ -1,0 +1,106 @@
+.best-sellers, .user-list {
+    display: grid;
+    width: 100%;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 599px) {
+    .best-sellers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 799px) {
+    .best-sellers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 999px) {
+    .best-sellers {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 399px) {
+    .user-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 599px) {
+    .user-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 799px) {
+    .user-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.book {
+    width: -webkit-fill-available;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    margin: 2rem;
+}
+
+.book-title {
+    font-size: small;
+    color: blue;
+    margin: 0;
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-align: start;
+}
+
+.book-info {
+    text-align: left;
+    margin: 1rem auto;
+}
+
+.price-tag {
+    color: orangered;
+    margin: 0;
+    font-size: small;
+}
+
+.author-name {
+    font-size: x-small;
+    font-weight: 300;
+    color: gray;
+    margin: 0;
+}
+
+.user-list img, .user-search img {
+    width: 70px;
+    padding: auto 10px;
+    border-radius: 100%;
+}
+
+.user-list, .user-search {
+    padding: auto 10px;
+}
+
+.user-search
+
+.user {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: start;
+}
+.user h4 {
+    margin: 0;
+}
+
+.user-info {
+    align-self: center;
+    padding: 0 20px;
+}
